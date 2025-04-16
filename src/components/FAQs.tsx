@@ -22,5 +22,5 @@ const items = [
 ];
 
 export const FAQs = () => {
-  return null;
+  return <div>FAQs</div>;
 };

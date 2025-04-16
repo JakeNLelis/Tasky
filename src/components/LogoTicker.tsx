@@ -15,5 +15,5 @@ const images = [
 ];
 
 export const LogoTicker = () => {
-  return null;
+  return <div>Logo Ticker</div>;
 };

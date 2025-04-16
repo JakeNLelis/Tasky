@@ -17,5 +17,5 @@ const features = [
 ];
 
 export const Features = () => {
-  return null;
+  return <div>Feature</div>;
 };
