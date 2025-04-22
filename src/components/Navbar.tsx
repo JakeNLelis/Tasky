@@ -11,9 +11,9 @@ export const Navbar = () => {
             <div className="absolute w-full top-2 bottom-0 bg-[linear-gradient(to_right,#F878FF,#F892CF,#FFDD98,#C2F0B1,#2FD8FE)] blur-md"></div>
             <Image src={logoImage} alt="Logo" className="h-12 w-12 relative" />
           </div>
-          <div className="border border-white border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden">
+          <button className="border border-white border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden">
             <MenuIcon className="text-white" />
-          </div>
+          </button>
           <nav className="gap-6 items-center hidden sm:flex">
             <a
               href="#"

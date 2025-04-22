@@ -1,3 +1,4 @@
+import Image from "next/image";
 import acmeLogo from "../assets/images/acme.png";
 import quantumLogo from "../assets/images/quantum.png";
 import echoLogo from "../assets/images/echo.png";
@@ -15,5 +16,26 @@ const images = [
 ];
 
 export const LogoTicker = () => {
-  return <div>Logo Ticker</div>;
+  return (
+    <div className="bg-black text-white py-[72px] sm:py-24">
+      <div className="contianer">
+        <h2 className="text-lg text-center text-white/70 mx-2">
+          Trusted by the world&apos;s most innovative teams
+        </h2>
+        <div className="overflow-hidden mt-9 before:content-[''] after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-5 after:w-5 relative after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]">
+          <div className="flex items-center justify-center gap-16">
+            {images.map((image, index) => (
+              <div key={index} className="flex-shrink-0">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  className="flex-none h-8 w-auto"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
